@@ -42,6 +42,7 @@
 // TAREA: Crea tu propio array, llamado comidasFavoritas, y escribi dentro algunas
 //       cosas que te gustan.
 
+const comidasFavoritas = ['milanesas', 'pizza', 'chimichanga', 'quesadillas'];
 
 
 
@@ -64,6 +65,7 @@
 // TAREA: Verifique cuántos valores tiene en su array comidasFavoritas.
 // imprimi utilizando console.log el resultado.
 
+console.log(comidasFavoritas.length);
 
 
 
@@ -90,6 +92,7 @@
 
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
 
+console.log(comidasFavoritas[2]);
 
 
 
@@ -116,6 +119,9 @@
 // con cualquier otra cosa.
 
 
+comidasFavoritas[1] = 'asado';
+
+
 
 
 
@@ -123,7 +129,7 @@
 // TAREA: console.log todo el array para verificar.
 
 
-
+console.log(comidasFavoritas);
 
 
 
@@ -147,6 +153,7 @@
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
 
+comidasFavoritas.push('fajitas');
 
 
 
@@ -154,7 +161,7 @@
 // TAREA: console.log todo el array para verificar.
 
 
-
+console.log(comidasFavoritas);
 
 
 
@@ -182,6 +189,10 @@
 // TAREA: Intenta crear un array como una constante y modifica los valores que contiene.
 
 
+const a = [1, 2, 3, 4];
+console.log(a);
+a[1] = 5;
+console.log(a);
 
 
 
@@ -246,7 +257,10 @@
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
 
-
+let numero = 0;
+while(numero < 10){
+    numero += 1
+}
 
 
 
@@ -268,9 +282,31 @@
 
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
 
+for (let i = 3; i <= 22; i += 3) {
+    console.log(i)};
+ 
 
 
 
+
+// Ejercicio:
+
+/*let i;
+for (i = 10; i > 0; i--) {
+    console.log('Hola ' + i)
+}
+// Ejercicio: 
+const notaParciales = [10, 4, 5, 6];
+let totalNotas = 0;
+for (let i=0; i < notaParciales.length; i++){
+    totalNotas = totalNotas + notaParciales[i];
+}
+
+console.log('El promedio es '+ totalNotas / notaParciales.length);
+
+*/
+// TAREA: Hacer una funcion que se llame calcularPromedio
+/// que tome como parametro un array 
 
 
 /*
@@ -297,7 +333,13 @@
 // TAREA: Probalo con tu comidasFavoritas array.
 
 
-
+/*for (let i = 0; i < comidasFavoritas.length; i++){
+    if (i === 2) {
+        console.log('Lo que mas me gusta es '+ comidasFavoritas[2])
+    }
+    console.log('Me gusta comer ' + comidasFavoritas[i]);
+}
+*/
 
 
 
@@ -338,7 +380,17 @@
 // 10% 3 = 1 - en 10 tenemos 3 * 3 + 1
 // 16% 4 = 0 - en 16 tenemos 4 * 4
 // 19% 4 = 3 - en 19 tenemos 4 * 4 + 3, etc.
-
+for (let i = 1; i <= 50; i = i + 1) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log('FizzBuzz');
+    }else if (i % 3 === 0){
+        console.log('Fizz');
+    }else if (i % 5 === 0) {
+        console.log('Buzz')
+    }else {
+        console.log(i);
+    }
+}
 
 
 
@@ -349,3 +401,51 @@
 // Levántate, estira las piernas y celebra tu logro.                        //
 // El siguiente paso será seguir las instrucciones en el archivo nivel3.js. //
 //////////////////////////////////////////////////////////////////////////////
+
+10 % 2
+10 % 3 
+/*for (let i = 10; i >= 0; i = i - 1) {
+    if (i === 5) {
+        console.log('Estamos en el medio!');
+    } else {
+        console.log(i);
+    }i % 3 && i % 5 === 0
+}
+*/
+/*for (let i = 0; i <= 50; i = i + 1) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log('FizzBuzz');
+    }else if (i % 3 === 0){
+        console.log('Fizz');
+    }else if (i % 5 === 0) {
+        console.log('Buzz')
+    }else {
+        console.log(i);
+    }
+}
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

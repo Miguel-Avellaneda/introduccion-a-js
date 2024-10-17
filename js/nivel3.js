@@ -129,8 +129,8 @@
 
 
 
-/*
-    Obteniendo elementos similares.
+
+    /*Obteniendo elementos similares.
     ========================
 
     También podemos obtener todos los elementos con la misma etiqueta. En nuestro
@@ -140,9 +140,11 @@
 
     Ejemplo:
 
-    // Esto obtendrá todos los <li> de la página.
-    const mediaLinks = document.querySelectorAll('li');
 */
+//Esto obtendrá todos los <li> de la página.
+const mediaLinks = document.querySelectorAll('li');
+
+console.log(mediaLinks);
 
 // TAREA: Obtené todos los elementos <li> de la página en una variable llamada mediaLinks.
 
